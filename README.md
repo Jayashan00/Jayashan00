@@ -148,10 +148,7 @@
   <img src="https://raw.githubusercontent.com/Jayashan00/Jayashan00/output/snake.svg" alt="snake animation" />
 </p>
 
-<!-- 3D Contribution Graph (enable via GitHub Action below) -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Jayashan00/Jayashan00/main/profile-3d-contrib/profile-night-green.svg" alt="3d contributions" />
-</p>
+
 
 <!-- Fun banner -->
 <p align="center">
