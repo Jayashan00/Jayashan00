@@ -1,0 +1,31 @@
+name: Generate 3D Contribution Graph
+
+on:
+  # Run automatically on a schedule
+  schedule:
+    - cron: '0 12 * * *' # Runs every day at 12 PM UTC
+  # Allow manual running from the "Actions" tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Generate 3D Contrib
+        uses: yoshi389111/github-profile-3d-contrib@v1
+        with:
+          USERNAME: Jayashan00
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # This path MUST match your README img src
+          OUTPUT: profile-3d-contrib/profile-night-green.svg
+      
+      - name: Commit & Push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: Update 3D contribution graph"
+          file_pattern: profile-3d-contrib/profile-night-green.svg
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
