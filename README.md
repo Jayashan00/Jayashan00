@@ -4,7 +4,7 @@
 <!-- Typing intro -->
 <p align="center">
   <a href="https://github.com/Jayashan00">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=700&color=22C55E&center=true&vCenter=true&width=900&lines=Computer+Engineering+Undergraduate+%40+University+of+Ruhuna;Full‑stack+Developer+%7C+Mobile+%7C+ML;React+%7C+Spring+Boot+%7C+Python+%7C+Docker+%7C+AWS;Always+learning%2C+building%2C+shipping+%F0%9F%9A%80" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.vercel.app?font=Fira+Code&weight=600&size=22&duration=3200&pause=700&color=22C55E&center=true&vCenter=true&width=900&lines=Computer+Engineering+Undergraduate+%40+University+of+Ruhuna;Full‑stack+Developer+%7C+Mobile+%7C+ML;React+%7C+Spring+Boot+%7C+Python+%7C+Docker+%7C+AWS;Always+learning%2C+building%2C+shipping+%F0%9F%9A%80" alt="Typing SVG" />
   </a>
 </p>
 
