@@ -1,0 +1,32 @@
+name: Generate Snake Animation
+
+on:
+  # Run automatically on a schedule
+  schedule:
+    - cron: '0 6 * * *' # Runs every day at 6 AM UTC
+  # Allow manual running from the "Actions" tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate snake.svg
+        uses: platane/snk@v3
+        with:
+          # Your GitHub username
+          github_user_name: Jayashan00
+          # The output file
+          outputs: dist/snake.svg
+      
+      - name: Deploy to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          # The branch to deploy to (matches your README)
+          target_branch: output
+          # The folder containing the file to deploy
+          build_dir: dist
+          # Required to push to a different branch
+          keep_history: true 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
