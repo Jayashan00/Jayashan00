@@ -1,31 +1,22 @@
-name: Generate 3D Contribution Graph
-
+name: Generate Snake
 on:
-  # Run automatically on a schedule
-  schedule:
-    - cron: '0 12 * * *' # Runs every day at 12 PM UTC
-  # Allow manual running from the "Actions" tab
+  schedule: [{cron: "0 0 * * *"}]   # daily
   workflow_dispatch:
-
+  push: {branches: ["main"]}
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      
-      - name: Generate 3D Contrib
-        uses: yoshi389111/github-profile-3d-contrib@latest
+      - uses: Platane/snk@v3
         with:
-          USERNAME: Jayashan00
+          github_user_name: Jayashan00
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+      - name: Push snake to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # This path MUST match your README img src
-          OUTPUT: profile-3d-contrib/profile-night-green.svg
-      
-      - name: Commit & Push
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: Update 3D contribution graph"
-          file_pattern: profile-3d-contrib/profile-night-green.svg
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "github-actions[bot]@users.noreply.github.com"
