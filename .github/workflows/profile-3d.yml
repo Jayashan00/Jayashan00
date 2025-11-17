@@ -17,6 +17,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: Jayashan00
+          OUTPUT: profile-3d-contrib/profile-night-green.svg
           
       - name: Commit files
         run: |
