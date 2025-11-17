@@ -107,11 +107,12 @@
 <h3>🚀 Featured Projects</h3>
 
 <p align="center">
-  <a href="https://github.com/Jayashan00/cosmic_havoc-main">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Jayashan00&repo=cosmic_havoc-main&theme=react&hide_border=true" />
-  </a>
   <a href="https://github.com/RashmikaHarshamal/KSPA_DATA_ANALYSIS_SYSTEM">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=RashmikaHarshamal&repo=KSPA_DATA_ANALYSIS_SYSTEM&theme=react&hide_border=true" />
+    <img alt="KSPA EDAS" src="https://img.shields.io/badge/KSPA_EDAS-Project-22c55e?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Jayashan00/cosmic_havoc-main">
+    <img alt="Cosmic Havoc" src="https://img.shields.io/badge/Cosmic_Havoc-Mobile_Game-0ea5e9?style=for-the-badge&logo=github&logoColor=white">
   </a>
 </p>
 
